@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import AboutArtist from './components/AboutArtist';
 import Form from './components/Form';
 import Footer from './components/Footer';
+import Conso from './components/Conso';
 
 function App() {
   const [showMenu, setShowMenu] = useState(false); // For mobile menu state
@@ -17,6 +18,7 @@ function App() {
     <div className="min-h-screen bg-red-950">
       <Navbar showMenu={showMenu} toggleMenu={toggleMenu} />
       <Hero />
+      <Conso/>
       <AboutArtist />
       <Form />
       <Footer />

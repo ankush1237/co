@@ -18,15 +18,15 @@ const Form = () => {
   useEffect(() => {
     const points = [];
     for (let i = 0; i < 80; i++) {
-      for (let j = 0; j < 20; j++) {
+      for (let j = 0; j < 30; j++) {
         points.push({ x: i * 30 - 600, y: j * 30 });
       }
     }
     setGrid(points);
 
     AOS.init({
-      offset: 100,
-      duration: 1000,
+      offset: 10,
+      duration: 10,
       easing: 'ease-in-out',
       delay: 100,
     });
@@ -93,8 +93,9 @@ const Form = () => {
         className="bg-red-900 text-white p-8 rounded-lg shadow-2xl w-full max-w-md sm:max-w-lg lg:max-w-2xl relative z-10"
         data-aos="fade-up"
       >
-        <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
-          Register
+        <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center"
+        style={{ fontFamily: 'Joti One, sans-serif' }} >
+          BOOK NOW
         </h1>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           {/* Name */}
@@ -203,10 +204,18 @@ const Form = () => {
 
           {/* Submit Button */}
           <button
+          style={{ fontFamily: 'Joti One, sans-serif' }} 
             type="submit"
             className="bg-red-600 text-white py-3 px-6 sm:py-3 sm:px-8 rounded-md hover:bg-red-700 transition-colors"
           >
             Submit
+          </button>
+          <button
+          style={{ fontFamily: 'Joti One, sans-serif' }} 
+            type="payment"
+            className="bg-red-600 text-white py-3 px-6 sm:py-3 sm:px-8 rounded-md hover:bg-red-700 transition-colors"
+          >
+            Pay here
           </button>
         </form>
       </div>

@@ -19,8 +19,9 @@ const Navbar = ({ showMenu, toggleMenu }) => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <button onClick={() => handleSmoothScroll('home')} className="flex items-center">
-            <span className="ml-2 text-xl font-bold text-white">
+          <button onClick={() => handleSmoothScroll('home')} className="flex items-center"
+            style={{ fontFamily: 'Joti One, sans-serif' }} >
+            <span className="ml-2 text-3xl font-bold text-white">
               <span className="text-red-600">CONSO</span>NITE
             </span>
           </button>
@@ -33,28 +34,39 @@ const Navbar = ({ showMenu, toggleMenu }) => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <button
+            style={{ fontFamily: 'Joti One, sans-serif' }} 
               className="text-white hover:text-red-500 transition-colors"
               onClick={() => handleSmoothScroll('home')}
             >
               Home
             </button>
             <button
+            style={{ fontFamily: 'Joti One, sans-serif' }} 
               className="text-white hover:text-red-500 transition-colors"
               onClick={() => handleSmoothScroll('abt')}
             >
-              About Artist
+              Artist
             </button>
             <button
+            style={{ fontFamily: 'Joti One, sans-serif' }} 
+              className="text-white hover:text-red-500 transition-colors"
+              onClick={() => handleSmoothScroll('conso')}
+            >
+              CONSONITE
+            </button>
+            <button
+            style={{ fontFamily: 'Joti One, sans-serif' }} 
               className="text-white hover:text-red-500 transition-colors"
               onClick={() => handleSmoothScroll('con')}
             >
               Contact Us
             </button>
             <button
+            style={{ fontFamily: 'Joti One, sans-serif' }} 
               onClick={() => handleSmoothScroll('form-section')}
               className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors"
             >
-              Register
+              Book Now
             </button>
           </div>
         </div>
@@ -76,7 +88,13 @@ const Navbar = ({ showMenu, toggleMenu }) => {
           className="text-white hover:text-red-500"
           onClick={() => handleSmoothScroll('abt')}
         >
-          About Artist
+         Artist
+        </button>
+        <button
+          className="text-white hover:text-red-500"
+          onClick={() => handleSmoothScroll('conso')}
+        >
+          CONSONITE
         </button>
         <button
           className="text-white hover:text-red-500"
@@ -88,7 +106,7 @@ const Navbar = ({ showMenu, toggleMenu }) => {
           onClick={() => handleSmoothScroll('form-section')}
           className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors"
         >
-          Register
+          Book Now
         </button>
       </div>
     </nav>
