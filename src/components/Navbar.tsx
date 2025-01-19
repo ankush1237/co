@@ -40,19 +40,19 @@ const Navbar = ({ showMenu, toggleMenu }) => {
             >
               Home
             </button>
+              <button
+            style={{ fontFamily: 'Joti One, sans-serif' }} 
+              className="text-white hover:text-red-500 transition-colors"
+              onClick={() => handleSmoothScroll('conso')}
+            >
+              CONSONITE
+            </button>
             <button
             style={{ fontFamily: 'Joti One, sans-serif' }} 
               className="text-white hover:text-red-500 transition-colors"
               onClick={() => handleSmoothScroll('abt')}
             >
               Artist
-            </button>
-            <button
-            style={{ fontFamily: 'Joti One, sans-serif' }} 
-              className="text-white hover:text-red-500 transition-colors"
-              onClick={() => handleSmoothScroll('conso')}
-            >
-              CONSONITE
             </button>
             <button
             style={{ fontFamily: 'Joti One, sans-serif' }} 
